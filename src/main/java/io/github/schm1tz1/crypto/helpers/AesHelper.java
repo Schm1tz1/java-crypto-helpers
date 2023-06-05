@@ -1,4 +1,4 @@
-package com.github.schm1tz1.crypto.helpers;
+package io.github.schm1tz1.crypto.helpers;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -4,9 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.schm1tz1</groupId>
+    <groupId>io.github.schm1tz1</groupId>
     <artifactId>JavaCryptoHelpers</artifactId>
     <version>0.1.0</version>
+    <name>JavaCryptoHelpers</name>
+    <description>Java Helper Classes for working with the Cryptographic Extensions</description>
+    <url>https://github.com/${project.github.repository}</url>
+    <inceptionYear>2021</inceptionYear>
 
     <properties>
         <maven.compiler.version>3.10.1</maven.compiler.version>
@@ -15,7 +19,7 @@
         <java.version>17</java.version>
         <slf4j.version>2.0.7</slf4j.version>
         <logback.version>1.4.7</logback.version>
-<!--        <pgpainless.version>1.5.1</pgpainless.version>-->
+        <project.github.repository>Schm1tz1/java-crypto-helpers</project.github.repository>
         <junit.jupiter.version>5.9.2</junit.jupiter.version>
     </properties>
 
