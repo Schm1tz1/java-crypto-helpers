@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.github.schm1tz1.crypto.helpers.AesHelperTest" time="0.438" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.github.schm1tz1.crypto.helpers.AesHelperTest" time="0.429" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/rschmitz/workspace/projects/java-crypto-helpers/target/test-classes:/Users/rschmitz/workspace/projects/java-crypto-helpers/target/classes:/Users/rschmitz/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/Users/rschmitz/.m2/repository/org/slf4j/log4j-over-slf4j/2.0.7/log4j-over-slf4j-2.0.7.jar:/Users/rschmitz/.m2/repository/ch/qos/logback/logback-classic/1.4.7/logback-classic-1.4.7.jar:/Users/rschmitz/.m2/repository/ch/qos/logback/logback-core/1.4.7/logback-core-1.4.7.jar:/Users/rschmitz/.m2/repository/org/pgpainless/pgpainless-core/1.5.1/pgpainless-core-1.5.1.jar:/Users/rschmitz/.m2/repository/org/bouncycastle/bcprov-jdk15to18/1.73/bcprov-jdk15to18-1.73.jar:/Users/rschmitz/.m2/repository/org/bouncycastle/bcpg-jdk15to18/1.73/bcpg-jdk15to18-1.73.jar:/Users/rschmitz/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/rschmitz/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.2/junit-jupiter-5.9.2.jar:/Users/rschmitz/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/Users/rschmitz/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/rschmitz/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/Users/rschmitz/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/rschmitz/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.2/junit-jupiter-params-5.9.2.jar:/Users/rschmitz/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/Users/rschmitz/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:"/>
+    <property name="java.class.path" value="/Users/rschmitz/workspace/projects/java-crypto-helpers/target/test-classes:/Users/rschmitz/workspace/projects/java-crypto-helpers/target/classes:/Users/rschmitz/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/Users/rschmitz/.m2/repository/org/slf4j/log4j-over-slf4j/2.0.7/log4j-over-slf4j-2.0.7.jar:/Users/rschmitz/.m2/repository/ch/qos/logback/logback-classic/1.4.7/logback-classic-1.4.7.jar:/Users/rschmitz/.m2/repository/ch/qos/logback/logback-core/1.4.7/logback-core-1.4.7.jar:/Users/rschmitz/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.2/junit-jupiter-5.9.2.jar:/Users/rschmitz/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/Users/rschmitz/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/rschmitz/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/Users/rschmitz/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/rschmitz/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.2/junit-jupiter-params-5.9.2.jar:/Users/rschmitz/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/Users/rschmitz/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:"/>
     <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://adoptium.net/"/>
@@ -13,9 +13,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="DE"/>
     <property name="sun.boot.library.path" value="/Users/rschmitz/.sdkman/candidates/java/17.0.6-tem/lib"/>
-    <property name="sun.java.command" value="/Users/rschmitz/workspace/projects/java-crypto-helpers/target/surefire/surefirebooter-20230605120421177_3.jar /Users/rschmitz/workspace/projects/java-crypto-helpers/target/surefire 2023-06-05T12-04-21_084-jvmRun1 surefire-20230605120421177_1tmp surefire_0-20230605120421177_2tmp"/>
+    <property name="sun.java.command" value="/Users/rschmitz/workspace/projects/java-crypto-helpers/target/surefire/surefirebooter-20230605121017836_3.jar /Users/rschmitz/workspace/projects/java-crypto-helpers/target/surefire 2023-06-05T12-10-17_768-jvmRun1 surefire-20230605121017836_1tmp surefire_0-20230605121017836_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/rschmitz/workspace/projects/java-crypto-helpers/target/test-classes:/Users/rschmitz/workspace/projects/java-crypto-helpers/target/classes:/Users/rschmitz/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/Users/rschmitz/.m2/repository/org/slf4j/log4j-over-slf4j/2.0.7/log4j-over-slf4j-2.0.7.jar:/Users/rschmitz/.m2/repository/ch/qos/logback/logback-classic/1.4.7/logback-classic-1.4.7.jar:/Users/rschmitz/.m2/repository/ch/qos/logback/logback-core/1.4.7/logback-core-1.4.7.jar:/Users/rschmitz/.m2/repository/org/pgpainless/pgpainless-core/1.5.1/pgpainless-core-1.5.1.jar:/Users/rschmitz/.m2/repository/org/bouncycastle/bcprov-jdk15to18/1.73/bcprov-jdk15to18-1.73.jar:/Users/rschmitz/.m2/repository/org/bouncycastle/bcpg-jdk15to18/1.73/bcpg-jdk15to18-1.73.jar:/Users/rschmitz/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/rschmitz/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.2/junit-jupiter-5.9.2.jar:/Users/rschmitz/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/Users/rschmitz/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/rschmitz/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/Users/rschmitz/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/rschmitz/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.2/junit-jupiter-params-5.9.2.jar:/Users/rschmitz/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/Users/rschmitz/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/rschmitz/workspace/projects/java-crypto-helpers/target/test-classes:/Users/rschmitz/workspace/projects/java-crypto-helpers/target/classes:/Users/rschmitz/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/Users/rschmitz/.m2/repository/org/slf4j/log4j-over-slf4j/2.0.7/log4j-over-slf4j-2.0.7.jar:/Users/rschmitz/.m2/repository/ch/qos/logback/logback-classic/1.4.7/logback-classic-1.4.7.jar:/Users/rschmitz/.m2/repository/ch/qos/logback/logback-core/1.4.7/logback-core-1.4.7.jar:/Users/rschmitz/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.2/junit-jupiter-5.9.2.jar:/Users/rschmitz/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/Users/rschmitz/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/rschmitz/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/Users/rschmitz/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/rschmitz/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.2/junit-jupiter-params-5.9.2.jar:/Users/rschmitz/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/Users/rschmitz/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/rschmitz"/>
     <property name="user.language" value="en"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/Users/rschmitz/workspace/projects/java-crypto-helpers/target/surefire/surefirebooter-20230605120421177_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/rschmitz/workspace/projects/java-crypto-helpers/target/surefire/surefirebooter-20230605121017836_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.6+10"/>
     <property name="user.name" value="rschmitz"/>
@@ -53,27 +53,27 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="AESEncryptDecryptAesCbcPasswordStringMessage" classname="com.github.schm1tz1.crypto.helpers.AesHelperTest" time="0.118">
-    <system-out><![CDATA[  Input Test Message->ljrafUtpVAqgGJk5FWfMREnZfn4VTEZ513yUK9/hDds=->Input Test Message
+  <testcase name="AESEncryptDecryptAesCbcPasswordStringMessage" classname="com.github.schm1tz1.crypto.helpers.AesHelperTest" time="0.125">
+    <system-out><![CDATA[  Input Test Message->Iuq+ibHYG+feyq01DZwHNM3ri2nuDBjzLLg4iwRKqsg=->Input Test Message
 ]]></system-out>
   </testcase>
-  <testcase name="AESEncryptDecryptAesEcbPasswordByteArray" classname="com.github.schm1tz1.crypto.helpers.AesHelperTest" time="0.069">
+  <testcase name="AESEncryptDecryptAesEcbPasswordByteArray" classname="com.github.schm1tz1.crypto.helpers.AesHelperTest" time="0.065">
     <system-out><![CDATA[  Input Bytes->[-45, 96, 10, -92, -45, -73, -82, 84, 57, -15, 70, -88, 125, 16, 6, -103]->Input Bytes
 ]]></system-out>
   </testcase>
-  <testcase name="AESEncryptDecryptAesCbcPasswordByteArray" classname="com.github.schm1tz1.crypto.helpers.AesHelperTest" time="0.078">
-    <system-out><![CDATA[  Input Bytes->&amp#0;&amp#16;��&amp#0;��&amp#27;�ݕw!ń�->Input Bytes
+  <testcase name="AESEncryptDecryptAesCbcPasswordByteArray" classname="com.github.schm1tz1.crypto.helpers.AesHelperTest" time="0.072">
+    <system-out><![CDATA[  Input Bytes->�Z/��)S��MȤQȔz->Input Bytes
 ]]></system-out>
   </testcase>
-  <testcase name="AESEncryptDecryptAesGcmPasswordStringMessage" classname="com.github.schm1tz1.crypto.helpers.AesHelperTest" time="0.06">
-    <system-out><![CDATA[  Input Test Message->Z1MYGPNy+TX4mQxnQqUqzTuqub+xsXr/B55nY991xeLl3g==->Input Test Message
+  <testcase name="AESEncryptDecryptAesGcmPasswordStringMessage" classname="com.github.schm1tz1.crypto.helpers.AesHelperTest" time="0.057">
+    <system-out><![CDATA[  Input Test Message->Hxf+eET+aZfm+JOEvBAwcx0bMaZteCcjrkcDVt71EZCSYg==->Input Test Message
 ]]></system-out>
   </testcase>
-  <testcase name="AESEncryptDecryptAesGcmPasswordByteArray" classname="com.github.schm1tz1.crypto.helpers.AesHelperTest" time="0.054">
-    <system-out><![CDATA[  Input Bytes->��8�&amp#29;�v��&amp#29;�&amp#23;�&:Ux�{Ϭ��u�v->Input Bytes
+  <testcase name="AESEncryptDecryptAesGcmPasswordByteArray" classname="com.github.schm1tz1.crypto.helpers.AesHelperTest" time="0.053">
+    <system-out><![CDATA[  Input Bytes->�>,S�吃�E=�u]��=a�����<�->Input Bytes
 ]]></system-out>
   </testcase>
-  <testcase name="AESEncryptDecryptAesEcbPasswordStringMessage" classname="com.github.schm1tz1.crypto.helpers.AesHelperTest" time="0.053">
+  <testcase name="AESEncryptDecryptAesEcbPasswordStringMessage" classname="com.github.schm1tz1.crypto.helpers.AesHelperTest" time="0.052">
     <system-out><![CDATA[  Input Test Message->Kx9Uan/eKR/ZZN3olTvUsAESivuqZlhy44Iav/uVpLA=->Input Test Message
 ]]></system-out>
   </testcase>
