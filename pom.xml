@@ -27,7 +27,7 @@
         <repository>
             <id>github</id>
             <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/schm1tz1/java-crypto-helpers</url>
+            <url>https://maven.pkg.github.com/${project.github.repository}</url>
         </repository>
     </distributionManagement>
 
