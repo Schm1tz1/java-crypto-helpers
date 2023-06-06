@@ -14,6 +14,9 @@ import java.security.spec.InvalidKeySpecException;
 import java.security.spec.KeySpec;
 import java.util.Base64;
 
+/**
+ * Helper Class for AES-based Symmetric Cryptography
+ */
 public class AesHelper {
 
     public static final String AES_ECB = "AES/ECB/PKCS5PADDING";
@@ -24,7 +27,7 @@ public class AesHelper {
 
     public static String encryptToString(String algorithm, String input, Key key, byte[] iv) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidAlgorithmParameterException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
         var inputBytes = input.getBytes(StandardCharsets.UTF_8);
-        var cipherText = encrypt(algorithm, inputBytes, (SecretKey) key, iv);
+        var cipherText = encrypt(algorithm, inputBytes, key, iv);
         return Base64.getEncoder().encodeToString(cipherText);
     }
 
@@ -44,7 +47,7 @@ public class AesHelper {
 
     public static String decryptString(String algorithm, String cipherText, Key key, byte[] iv) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidAlgorithmParameterException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
         var bytes = Base64.getDecoder().decode(cipherText);
-        var plainText = decrypt(algorithm, bytes, (SecretKey) key, iv);
+        var plainText = decrypt(algorithm, bytes, key, iv);
         return new String(plainText, StandardCharsets.UTF_8);
     }
 

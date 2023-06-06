@@ -10,6 +10,7 @@ import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 import java.io.UnsupportedEncodingException;
 import java.math.BigInteger;
+import java.nio.charset.StandardCharsets;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.security.PublicKey;
@@ -94,7 +95,7 @@ class RsaHelperTest {
         Cipher cipher = Cipher.getInstance(RsaHelper.RSA_OAEP);
         cipher.init(Cipher.ENCRYPT_MODE, pubKey);
 
-        byte[] cipherData = cipher.doFinal(TEST_STRING.getBytes("UTF-8"));
+        byte[] cipherData = cipher.doFinal(TEST_STRING.getBytes(StandardCharsets.UTF_8));
         String encrypted = Base64.getEncoder().encodeToString(cipherData);
         logger.info("Encrypted message: " + encrypted);
     }

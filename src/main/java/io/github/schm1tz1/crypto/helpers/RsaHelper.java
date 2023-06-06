@@ -22,6 +22,9 @@ import java.util.Arrays;
 import java.util.Base64;
 import java.util.HashMap;
 
+/**
+ * Helper Class for RSA-based Asymmetric Cryptography
+ */
 public class RsaHelper {
 
     public static final String RSA_PKCS1 = "RSA/ECB/PKCS1Padding";
@@ -60,6 +63,7 @@ public class RsaHelper {
             }
             return null;
         }
+
         static HashMap<String, BigInteger> parseKeyFromXmlString(String xmlInput) {
             DocumentBuilder db = null;
             String filteredXmlInput = filterSpecialCharacters(xmlInput);
@@ -84,11 +88,11 @@ public class RsaHelper {
             Element finalElementsByTagName = elementsByTagName;
             Arrays.stream(names).sequential().forEach(key -> {
                 var firstItem = finalElementsByTagName.getElementsByTagName(key).item(0);
-                if(firstItem == null) {
+                if (firstItem == null) {
                     return;
                 }
                 var numberValue = parseEncodedBigInteger(firstItem.getTextContent());
-                if(numberValue != null) {
+                if (numberValue != null) {
                     values.put(key, numberValue);
                 }
             });
