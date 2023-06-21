@@ -28,12 +28,12 @@ public class GeneralCryptoTests {
     @Test
     void checkForAlgorithms() throws NoSuchPaddingException, NoSuchAlgorithmException {
         String[] algorithms = {
-                AesHelper.AES_GCM, AesHelper.AES_CBC, AesHelper.AES_ECB,
-                RsaHelper.RSA_OAEP, RsaHelper.RSA_OAEP_SHA256_MGF1,
+                AesProvider.AES_GCM, AesProvider.AES_CBC, AesProvider.AES_ECB,
+                RsaProvider.RSA_OAEP, RsaProvider.RSA_OAEP_SHA256_MGF1,
                 "RSA/ECB/OAEPWithMD5AndMGF1Padding"
         };
 
-        Arrays.stream(algorithms).forEach( algorithm -> {
+        Arrays.stream(algorithms).forEach(algorithm -> {
             try {
                 Cipher.getInstance(algorithm);
             } catch (NoSuchAlgorithmException e) {
