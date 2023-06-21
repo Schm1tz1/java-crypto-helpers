@@ -107,15 +107,17 @@ public class AesProviderTest {
         props.put(CryptoProvider.ENCRYPTION_KEY, randomKeyBase64Encoded);
         props.put(CryptoProvider.ALGORITHM_PARAMETERS, AesProvider.AES_GCM);
         props.put(AesProvider.INITIALIZATION_VECTOR, "ABCDE08154711");
+        props.put(CryptoProvider.STRINGS_USE_BASE_64, true);
 
         var aesHelper = new AesProvider();
         aesHelper.configure(props);
 
-        byte[] plaintextAsBytes = "Test-String".getBytes(StandardCharsets.UTF_8);
-        byte[] ciphertextAsBytes = aesHelper.encrypt(plaintextAsBytes);
-        assertNotNull(aesHelper.encrypt(plaintextAsBytes));
+        var plaintext = "Test-String";
+        var ciphertext = aesHelper.encrypt(plaintext);
+        assertNotNull(aesHelper.encrypt(plaintext));
 
-        logger.info(new String(ciphertextAsBytes, StandardCharsets.UTF_8));
+        assertEquals(plaintext, aesHelper.decrypt(ciphertext));
+        logger.info(ciphertext);
     }
 
 }

@@ -12,7 +12,6 @@ import javax.xml.parsers.ParserConfigurationException;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.math.BigInteger;
-import java.nio.charset.StandardCharsets;
 import java.security.KeyFactory;
 import java.security.NoSuchAlgorithmException;
 import java.security.PrivateKey;
@@ -87,8 +86,8 @@ public class RsaProvider extends CryptoProvider {
         } catch (Throwable t) {
             throw new RuntimeException(t);
         }
-        String encrypted = Base64.getEncoder().encodeToString(cipherData);
-        return encrypted.getBytes(StandardCharsets.UTF_8);
+
+        return cipherData;
     }
 
     @Override

@@ -104,13 +104,18 @@ public class AesProvider extends CryptoProvider {
             throw new RuntimeException(t);
         }
 
-        String encrypted = Base64.getEncoder().encodeToString(cipherData);
-        return encrypted.getBytes(StandardCharsets.UTF_8);
+        return cipherData;
     }
 
     @Override
     public byte[] decrypt(byte[] ciphertextIn) {
-        return null;
+        byte[] plaintextData;
+        try {
+            plaintextData = decrypt(this.algorithmParameters, ciphertextIn, this.symmetricKey, this.initializationVector);
+        } catch (Throwable t) {
+            throw new RuntimeException(t);
+        }
+        return plaintextData;
     }
 
     @Override
